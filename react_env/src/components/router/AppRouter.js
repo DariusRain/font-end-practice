@@ -5,7 +5,7 @@ function AppRouter() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/hackr/login">
           <Login />
         </Route>
       </Switch>

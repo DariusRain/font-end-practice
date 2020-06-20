@@ -1,20 +1,28 @@
-const AUTH_LOGIN_UPDATE = "hackr/auth/auth_login_update";
+const AUTH_UPDATE = "hackr/auth/auth_update";
 const AUTH_LOGIN_FAIL = "hackr/auth/auth_login_fail";
 const AUTH_LOGIN_SUCCESS = "hackr/auth/auth_login_success";
 
-export const authReducer = (state = 0, action) => {
+const INITIAL_STATE = {
+  loading: true,
+  errors: {},
+  user: {}
+
+};
+
+export const authReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case AUTH_UPDATE:
+      return {
+        ...state,
+        [action.payload.field]: action.payload.value,
+      };
     case AUTH_LOGIN_FAIL:
-      return;
     case AUTH_LOGIN_SUCCESS:
-      return;
-    case AUTH_LOGIN_SUCCESS:
-      return;
+      return {
+        ...state,
+        loading: false,
+      };
     default:
       return state;
   }
 };
-
-
-
-
