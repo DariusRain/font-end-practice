@@ -13,6 +13,7 @@ export const Login = () => {
         src="https://cdn.iconscout.com/icon/free/png-256/github-1693585-1442626.png"
       ></img>
       <Link
+        className={"no-decoration"}
         style={{
           width: "7rem",
           textDecoration: "none",
@@ -21,7 +22,7 @@ export const Login = () => {
         }}
         to="/hackr/auth/github"
       >
-        Sign in
+        Login/Register
       </Link>
     </div>
   );

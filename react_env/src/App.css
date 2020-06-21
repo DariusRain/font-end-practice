@@ -12,3 +12,7 @@
 .flex-wrapped {
   flex-wrap: wrap;
 }
+
+.no-decoration {
+    text-decoration: none;
+}
