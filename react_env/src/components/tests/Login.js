@@ -1,27 +1,30 @@
 // LoginComponent for hackr.
-import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-// import {apiRoot} from "../../config"
-// import axios from "axios";
+import React from "react";
+import { Link } from "react-router-dom";
 export const Login = () => {
-    // const handleClick = () => (<Redirect to={`${apiRoot}/auth/github`} />)
-    return (
-        <div>
-            <h1>Login</h1>
-            <Link to="/hackr/auth/github">
-                Sign in
-            </Link>
-        </div>
-    )
-}
+  return (
+    <div
+      className={"flex-column"}
+    >
+      <img
+      className={"center-element"}
+        style={{ width: "7rem"}}
+        alt="Github-Icon"
+        src="https://cdn.iconscout.com/icon/free/png-256/github-1693585-1442626.png"
+      ></img>
+      <Link
+        style={{
+          width: "7rem",
+          textDecoration: "none",
+          fontSize: "1rem",
+          textAlign: "center"
+        }}
+        to="/hackr/auth/github"
+      >
+        Sign in
+      </Link>
+    </div>
+  );
+};
 
-const mapStateToProps = (state) => ({
-    
-})
-
-const mapDispatchToProps = {
-    
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Login)
+export default Login;
