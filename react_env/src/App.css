@@ -1,14 +1,84 @@
 .center-element {
   margin: 0 auto;
 }
+.center-text {
+  text-align: center;
+}
+.large-font {
+    font-size: 3rem;
+}
+.medium-font {
+   font-size: 2em ;
+}
+.small-font {
+    font-size: 1rem;
+}
 .flex-row {
   display: flex;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
+.hover-text-white:hover {
+  color: whitesmoke;
+}
+.hover-text-green:hover {
+  color: #64ff64;
+}
 .flex-column {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-
 .flex-wrapped {
   flex-wrap: wrap;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 0.2rem;
+  border-style: solid;
+  border-color: #444444;
+  border-width: 0.4rem;
+  padding: 2rem;
+}
+.card:hover {
+  border-bottom-color: #64ff64;
+}
+.theme-green-background {
+  background-color: #64ff64;
+}
+.theme-grey-background {
+  background-color: #444444;
+}
+
+.theme-green-text {
+  color: #66ff66;
+}
+
+.theme-grey-text {
+  color: #444444;
+}
+
+.theme-white-text {
+  color: whitesmoke;
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.width-50 {
+  width: 50%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-75 {
+  width: 75%;
+}
+.width-100 {
+  width: 100%;
 }
